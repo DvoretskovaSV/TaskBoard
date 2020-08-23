@@ -17,13 +17,20 @@
      */
     "requires": [
         "font-awesome",
-        "ux"
+        "ux",
+        "ext-locale"
     ],
 
     /**
      * The relative path to the application's markup file (html, jsp, asp, etc.).
      */
     "indexHtmlPath": "index.html",
+
+    /**
+    * locale settings
+    */
+    "locale": "ru",
+
 
     /**
      * Comma-separated string with the paths of directories or files to search. Any classes
@@ -80,7 +87,7 @@
          *         // The file used to save sass variables edited via Sencha Inspector and Sencha Themer.
          *         // This file will automatically be applied to the end of the scss build.
          *         "var": "sass/save.scss",
-         *      
+         *
          *         // The directory used to save generated sass sources.
          *         // This directory will automatically be applied to the end of the scss build.
          *         "src": "sass/save"
@@ -254,21 +261,21 @@
      * are supported.
      *
      */
-     "loader": {
-         // This property controls how the loader manages caching for requests:
-         //
-         //   - true: allows requests to receive cached responses
-         //   - false: disable cached responses by adding a random "cache buster"
-         //   - other: a string (such as the build.timestamp shown here) to allow
-         //     requests to be cached for this build.
-         //
-         "cache": true,
+    "loader": {
+        // This property controls how the loader manages caching for requests:
+        //
+        //   - true: allows requests to receive cached responses
+        //   - false: disable cached responses by adding a random "cache buster"
+        //   - other: a string (such as the build.timestamp shown here) to allow
+        //     requests to be cached for this build.
+        //
+        "cache": true,
 
-         // When "cache" is not true, this value is the request parameter used
-         // to control caching.
-         //
-         "cacheParam": "_dc"
-     },
+        // When "cache" is not true, this value is the request parameter used
+        // to control caching.
+        //
+        "cacheParam": "_dc"
+    },
 
     /**
      * Settings specific to production builds.
@@ -357,7 +364,7 @@
      *          "css": "${app.output.resources}/${app.name}-all.css",
      *          "js": {
      *              "path": "app.js",
-     *              // This setting constrols the output language level.  Set to 'ES6' to 
+     *              // This setting constrols the output language level.  Set to 'ES6' to
      *              // disable the transpiler
      *              "version": "ES5"
      *          },
