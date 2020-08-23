@@ -1,0 +1,28 @@
+.importance{
+
+  &-must{
+    background-color: #ffcbcb;
+  }
+
+  &-should{
+    background-color: #ffff9a;
+  }
+
+  &-could{
+    background-color: #cffbd4;
+  }
+}
+
+.icon-importance{
+  &-must{
+    color: #ff0000 !important;
+  }
+
+  &-should{
+    color: #ffff00 !important;
+  }
+
+  &-could{
+    color: #02ff02 !important;
+  }
+}
