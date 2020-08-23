@@ -20,7 +20,7 @@ Ext.define('TaskBoard.view.board.BoardModel', {
             autoLoad: true,
             pageSize: 2000,
             model: 'TaskBoard.model.Task',
-            id: 'tasks'
+            id: 'tasks',
         }
     }
 });

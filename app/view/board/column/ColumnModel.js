@@ -21,11 +21,11 @@ Ext.define('TaskBoard.view.board.column.ColumnViewModel', {
 
             sorters: [
                 {
-                    property: 'priority',
+                    property: 'lastName',
                     direction: 'ASC'
                 },
                 {
-                    property: 'lastName',
+                    property: 'priority',
                     direction: 'ASC'
                 }
             ]
