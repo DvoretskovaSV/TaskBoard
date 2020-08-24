@@ -3,8 +3,9 @@ Ext.define('TaskBoard.view.board.BoardModel', {
 
     alias: 'viewmodel.board',
 
+    //выбранная задача
     data: {
-        selection: null
+        task: null
     },
 
     stores: {

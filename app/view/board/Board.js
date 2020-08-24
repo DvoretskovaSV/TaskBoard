@@ -2,11 +2,6 @@ Ext.define('TaskBoard.view.board.Board', {
     extend: 'Ext.Container',
     xtype: 'board',
 
-    requires: [
-        'TaskBoard.view.board.BoardController',
-        'TaskBoard.view.board.BoardModel',
-    ],
-
     controller: 'board',
     viewModel: {
         type: 'board'
@@ -31,8 +26,7 @@ Ext.define('TaskBoard.view.board.Board', {
             region: 'south',
             hidden: true,
             bind: {
-                hidden: '{!selection}',
-                record: '{selection}'
+                hidden: '{!task}',
             }
         }
     ]

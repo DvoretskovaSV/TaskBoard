@@ -9,7 +9,7 @@ Ext.application({
     extend: 'TaskBoard.Application',
 
     requires: [
-        'TaskBoard.view.board.Board'
+        'TaskBoard.*'
     ],
 
     // The name of the initial view to create. With the classic toolkit this class

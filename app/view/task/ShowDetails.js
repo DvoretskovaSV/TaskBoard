@@ -2,23 +2,15 @@ Ext.define('TaskBoard.view.task.ShowDetails', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.task-details',
 
-    reference: 'task',
-
-    config: {
-        record: null
-    },
-
-    publishes: ['record'],
-
     bind: {
-        title: '#{task.record.id}'
+        title: '#{task.id}'
     },
 
     bodyPadding: 15,
     scrollable: true,
     header: {
         bind: {
-            iconCls : 'x-fa fa-circle icon-importance-{task.record.importance:lowercase}'
+            iconCls : 'x-fa fa-circle icon-importance-{task.importance:lowercase}'
         }
     },
     defaults: {
@@ -28,20 +20,20 @@ Ext.define('TaskBoard.view.task.ShowDetails', {
     items: [
         {
             fieldLabel: 'Дата',
-            bind: '{task.record.date}',
+            bind: '{task.date}',
             renderer:  Ext.util.Format.dateRenderer('d M Y')
         },
         {
             fieldLabel: 'Ответственный',
-            bind: '{task.record.fullname}'
+            bind: '{task.fullName}'
         },
         {
             fieldLabel: 'Статус',
-            bind: '{task.record.status}'
+            bind: '{task.status}'
         },
         {
             fieldLabel: 'Описание',
-            bind: '{task.record.name}'
+            bind: '{task.name}'
         },
     ]
 });

@@ -5,8 +5,15 @@ Ext.define('TaskBoard.view.board.BoardController', {
 
 
     onDropRecord(plugin, view, record){
+        const viewModel = this.getViewModel(),
+            isSelected = viewModel.get('task') === record;
+
         const status = view.lookupViewModel().get('status');
         record.set('status', status);
+
+        if(isSelected){
+            viewModel.set('task', record);
+        }
     },
 
 

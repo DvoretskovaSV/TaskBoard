@@ -1,5 +1,5 @@
 /**
- * This class is the base class for all entities in the application.
+ * Базовый класс для всех сущностей в приложении
  */
 Ext.define('TaskBoard.model.Base', {
     extend: 'Ext.data.Model',

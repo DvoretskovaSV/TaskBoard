@@ -1,0 +1,162 @@
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/packages/font-ext/sass/src/all.scss:99 */
+.ext-text-color:before {
+    content: "\e60e";
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/packages/font-ext/sass/src/all.scss:102 */
+.ext-text-decrease:before {
+    content: "\e60f";
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/packages/font-ext/sass/src/all.scss:105 */
+.ext-text-increase:before {
+    content: "\e610";
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/packages/font-ext/sass/src/all.scss:108 */
+.ext-unpin:before {
+    content: "\e611";
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/classic/theme-triton/sass/src/Component.scss:3 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/classic/theme-triton/sass/src/Component.scss:10 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-LightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/classic/theme-triton/sass/src/Component.scss:17 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/classic/theme-triton/sass/src/Component.scss:24 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/classic/theme-triton/sass/src/Component.scss:31 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Semibold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/classic/theme-triton/sass/src/Component.scss:38 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-SemiboldItalic.ttf');
+    font-weight: 600;
+    font-style: italic;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/classic/theme-triton/sass/src/Component.scss:45 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/classic/theme-triton/sass/src/Component.scss:52 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-BoldItalic.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/classic/theme-triton/sass/src/Component.scss:59 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/classic/theme-triton/sass/src/Component.scss:66 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-ExtraBoldItalic.ttf');
+    font-weight: 800;
+    font-style: italic;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/ext/classic/theme-triton/sass/src/menu/Menu.scss:1 */
+.x-menu-item-active .x-menu-item-text {
+    font-weight: 400;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/app/view/board/column/Column.scss:1 */
+.board-column-highlight:before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #d4d4d4;
+    opacity: 0.5;
+    position: absolute;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/app/view/board/column/Column.scss:13 */
+.task-wrap {
+    border: 1px solid #c7d1da;
+    margin-bottom: 15px;
+    padding: 6px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/app/view/board/column/Column.scss:25 */
+.task-header {
+    padding: 4px 5px 9px;
+    border-bottom: 1px solid #d4d4d4;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/app/view/board/column/Column.scss:29 */
+.task-header .number {
+    font-weight: 500;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/app/view/board/column/Column.scss:34 */
+.task-content {
+    padding: 5px 0px 9px;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/app/view/board/column/Column.scss:38 */
+.task-selected {
+    outline: 3px solid #5fa2dd !important;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/app/view/board/column/Column.scss:42 */
+.task-drag {
+    max-width: 300px;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/app/view/board/column/Column.scss:45 */
+.task-drag .task-content {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/app/Application.scss:3 */
+.importance-must {
+    background-color: #ffcbcb;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/app/Application.scss:7 */
+.importance-should {
+    background-color: #ffff9a;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/app/Application.scss:11 */
+.importance-could {
+    background-color: #cffbd4;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/app/Application.scss:17 */
+.icon-importance-must {
+    color: red !important;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/app/Application.scss:21 */
+.icon-importance-should {
+    color: #ff0 !important;
+}
+/* /home/svetlanka/apps/ghgfh/TaskBoard/app/Application.scss:25 */
+.icon-importance-could {
+    color: #02ff02 !important;
+}

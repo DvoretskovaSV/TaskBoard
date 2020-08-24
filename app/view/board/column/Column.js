@@ -2,10 +2,6 @@ Ext.define('TaskBoard.view.board.column.Column', {
     extend: 'Ext.Panel',
     alias: 'widget.column-board',
 
-    requires: [
-        'Ext.view.plugins.ViewDragDrop'
-    ],
-
     layout: 'fit',
 
     viewModel: {
@@ -21,6 +17,7 @@ Ext.define('TaskBoard.view.board.column.Column', {
             allowDeselect: true,
             selectedItemCls: 'task-selected',
             emptyText: 'Текущих задач не найдено',
+            preserveScrollOnRefresh: true,
 
             plugins: [{
                 ptype: 'viewdragdrop',
@@ -32,7 +29,7 @@ Ext.define('TaskBoard.view.board.column.Column', {
             }],
 
             bind: {
-                selection: '{selection}',
+                selection: '{task}',
                 store: '{TasksChainedStore}'
             },
 

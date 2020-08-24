@@ -1,4 +1,4 @@
-Ext.define('Ext.view.plugins.ViewDragDrop', {
+Ext.define('TaskBoard.view.plugins.ViewDragDrop', {
     extend: 'Ext.plugin.Abstract',
     alias: 'plugin.viewdragdrop',
 
@@ -11,7 +11,7 @@ Ext.define('Ext.view.plugins.ViewDragDrop', {
     ],
 
 
-    constructor: function(config) {
+    constructor(config) {
         const me = this;
 
         me.callParent([
@@ -53,10 +53,6 @@ Ext.define('Ext.view.plugins.ViewDragDrop', {
                         draggedRecord: store && store.getByInternalId(sourceEl.getAttribute('data-recordid'))
                     }
                 }
-            },
-
-            getRepairXY() {
-                return this.dragData.repairXY;
             },
 
             onDragOut(e, view){

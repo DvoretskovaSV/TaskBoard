@@ -212,7 +212,7 @@
      */
     "js": [
         {
-            "path": "${framework.dir}/build/ext-all-rtl-debug.js"
+            "path": "${framework.dir}/build/ext-all-debug.js"
         },
         {
             "path": "app.js",
@@ -396,7 +396,7 @@
     "output": {
         "base": "${workspace.build.dir}/${build.environment}/${app.name}",
         "appCache": {
-            "enable": true
+            "enable": false
         },
         "js": {
             "version": "ES5"

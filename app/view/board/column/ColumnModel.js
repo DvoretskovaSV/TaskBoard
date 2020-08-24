@@ -1,4 +1,4 @@
-Ext.define('TaskBoard.view.board.column.ColumnViewModel', {
+Ext.define('TaskBoard.view.board.column.ColumnModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.column-board',
 

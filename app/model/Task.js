@@ -10,8 +10,15 @@ Ext.define('TaskBoard.model.Task', {
         {name: 'importance', type: 'string'},
         {name: 'date', type: 'date', dateFormat: 'Y-m-d'},
         {
-            name: 'fullname', persist: false,
-            calculate: data => `${data.firstName  + ', ' || ''} ${data.lastName || ''}`
+            name: 'fullName', persist: false,
+            calculate: data => {
+                let {firstName, lastName} = data;
+
+                firstName = firstName ? `${firstName}, ` : '';
+                lastName = lastName || '';
+
+                return `${firstName}${lastName}`;
+            }
         },
         {
             name: 'priority', type: 'int', persist: false,

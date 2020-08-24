@@ -3,6 +3,11 @@ Ext.define('TaskBoard.Application', {
 
     name: 'TaskBoard',
 
+    requires: [
+        'TaskBoard.*',
+        'Ext.plugin.Viewport'
+    ],
+
     quickTips: false,
     platformConfig: {
         desktop: {
@@ -12,9 +17,8 @@ Ext.define('TaskBoard.Application', {
 
 
     onBeforeLaunch() {
-        // All smoke-and-mirrors with data happens in SimData. This is a fake server that
-        // runs in-browser and intercepts the various Ajax requests a real app would make
-        // to a real server.
+        //Инициализация "фейкового" сервера
+        //Запускается в браузере и перехватывает все запросы ajax
         TaskBoard.SimData.init();
 
         this.callParent();
